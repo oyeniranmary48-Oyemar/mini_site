@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | My Learning Journey</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <nav aria-label="Main">
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a>
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -19,15 +22,24 @@
     <p>Hello, and thanks for stopping by. I am passionate about technology and I am building my skills one page at a time. This little site is where I show what I am learning and where I hope to go next.</p>
 
     <h2>Three things I am learning at CWW Africa</h2>
-    <ul>
-      <li>HTML: building the structure of web pages</li>
-      <li>CSS: styling pages with colours, fonts and layout</li>
-      <li>JavaScript: making pages interactive</li>
+    <ul class="cards">
+      <li class="card">
+        <h3>HTML</h3>
+        <p>Building the structure of web pages.</p>
+      </li>
+      <li class="card">
+        <h3>CSS</h3>
+        <p>Styling pages with colours, fonts and layout.</p>
+      </li>
+      <li class="card">
+        <h3>JavaScript</h3>
+        <p>Making pages interactive.</p>
+      </li>
     </ul>
   </main>
 
-  <footer>
-    <p>Built by hand with HTML.</p>
+  <footer class="site-footer">
+    <p>Built by hand with HTML and CSS.</p>
   </footer>
 </body>
 </html>
